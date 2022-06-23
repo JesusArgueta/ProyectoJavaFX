@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="moverPanel" onMouseDragged="#pintarPanel" onMousePressed="#moverPanel" prefHeight="510.0" prefWidth="760.0" style="-fx-background-image: url(imagenes/portada.png);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorVentanaInicio">
+   <children>
+      <Label layoutX="278.0" layoutY="75.0" text="INICIAR SESIÓN" textFill="#bd0000">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="174.0" text="Nombre de usuario:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="270.0" text="Contraseña:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="jtfUsuario" layoutX="189.0" layoutY="215.0" onMouseClicked="#pulsarUsuario" prefHeight="31.0" prefWidth="400.0" text="Inserte usuario" />
+      <Label fx:id="lbAyuda" layoutX="683.0" layoutY="460.0" onMouseClicked="#pulsarAyuda" text="Ayuda" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button fx:id="btnAcceso" layoutX="208.0" layoutY="402.0" mnemonicParsing="false" onAction="#acceso" onMouseEntered="#hoverEntrada" onMouseExited="#hoverSalida" style="-fx-background-color: #8B0000;" text="Iniciar sesión" textFill="#fffefe">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="32.0" layoutY="48.0" prefHeight="100.0" prefWidth="229.0" style="-fx-background-image: url(/imagenes/coche.png);" />
+      <Separator layoutX="64.0" layoutY="149.0" prefHeight="4.0" prefWidth="649.0" />
+      <PasswordField fx:id="jtfPassword" layoutX="190.0" layoutY="305.0" onMouseClicked="#pulsarContraseña" prefHeight="31.0" prefWidth="400.0" text="*************" />
+      <Button fx:id="btnSalir" layoutX="423.0" layoutY="402.0" mnemonicParsing="false" onAction="#salir" onMouseEntered="#hoverEntradas" onMouseExited="#hoverSalidaS" style="-fx-background-color: #8B0000;" text="Salir" textFill="#fffefe">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
